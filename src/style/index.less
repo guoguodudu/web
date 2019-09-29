@@ -1,0 +1,261 @@
+@import "variables";
+@import "global";
+@import "scroll";
+@import "table";
+@import "login";
+@import "icons";
+@import "button";
+@import "modal";
+@import "menu";
+@import "banner";
+@import "card";
+@import "img";
+@import "utils-text";
+@import "utils-color";
+@import "utils-size";
+@import "utils-border";
+@import "utils-spacing";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*{
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+#root{
+  height: 100%;
+}
+.ant-layout{
+  height: 100%;
+  .logo{
+    height: 32px;
+    background: #ffffff;
+    border-radius: 6px;
+    margin: 16px;
+  }
+  .ant-layout-sider-collapsed{
+    .anticon{
+      font-size: 16px;
+      // margin-left: 8px;
+    }
+    .nav-text{
+      display: none;
+    }
+    .ant-menu-submenu-vertical > .ant-menu-submenu-title:after{
+      display: none;
+    }
+    .ant-menu-dark:not(.ant-menu-inline) .ant-menu-submenu-open {
+      color: inherit;
+    }
+  }
+  p {
+    margin: 10px 0 10px 0;
+  }
+}
+.gutter-example{
+  .ant-row{
+    //margin-left: 0 !important;
+    //margin-right: 0 !important;
+    >div{
+      background: transparent;
+      border: 0;
+    }
+  }
+}
+.gutter-box {
+  padding: 5px 0;
+}
+
+:global {
+  .ant-card-head-title {
+    font-size: 14px !important;
+  }
+}
+
+.cus-blue-box{
+  .ant-col{
+    font-size: 14px;
+    .blue{
+      color: blue;
+      font-size: 12px;
+    }
+  }
+}
+
+
+.ant-table-tbody > tr > td{
+  padding : 8px 8px;}
+  
+  // 被选中的表格行的样式
+.clickRowStyl {
+  background-color: rgba(110, 170, 240, .8)
+}
+.ant-table-tbody>.clickRowStyl:hover>td {
+  // background-color: #00b4ed
+}
+
+.editable-Row-operations .ant-btn + .ant-btn{
+  margin-left: auto;
+}
+
+.word-breaking{
+  word-break: break-all;
+}
+span.r-v{
+  color:blue;
+} 
+span.r-l::after{
+  content: "："
+}
+.mb-5{
+  margin-bottom: 8px;
+}
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover, 
+// input:-webkit-autofill:focus,
+// textarea:-webkit-autofill,
+// textarea:-webkit-autofill:hover,
+// textarea:-webkit-autofill:focus,
+// select:-webkit-autofill,
+// select:-webkit-autofill:hover,
+// select:-webkit-autofill:focus {
+//   // transform: scaleX(1.01);
+// }
+
+.flex-cen-bet{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.same-left-w{
+  width: 140px;
+  display: inline-block;
+}
+.f-sb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.f-cc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  min-height: 48px;
+  background: #d2d2d2;
+  background-clip: padding-box;
+  border: 6px solid #777;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #888;
+  border-width: 8px;
+} 
+
+
+.ant-table-fixed {
+  word-wrap: break-word;
+  table-layout: fixed;
+}
+
+td {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.table-content {
+  background: rgb(140, 200, 255);
+  box-shadow: 5px 5px 4px rgb(253, 227, 207);
+  transition: all 0.3s linear;
+}
+
+.table-content:hover {
+  /* background: rgb(140, 200, 255) !important; */
+  /* transition: all .3s linear; */
+}
+
+.ant-table-tbody > .table-content:hover td {
+  /* background-color: green !important; */
+}
+
+.ant-table-row-hover {
+  /* background: #f56a00 !important; */
+}
+
+.blue{
+  color: dodgerblue;
+}
+.blod-pannel-header .ant-collapse-header{
+  font-weight: 700;
+}
+.upload-box{
+  width: 400px;
+}
+.upload-box-outer{
+  margin-left: 10px;
+}
+//.ant-modal-close{
+//  display: none;
+//}
+.addon-after{
+  .ant-input-group-addon{
+    background-color: #CCC;
+    color: #333;
+  }  
+}
+.img-preview{
+  &.enactive{
+    width:100vw;
+    height:100vh;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0,0,0,.7);
+    left: 0;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    .img-preview-inner{
+      width: auto;
+      height: 80%;
+    }
+  }
+  .img-preview-inner{
+    width: 30px;
+    height:20px;  
+  }
+}
+.operation-edit-upload{
+  width:80px;
+}

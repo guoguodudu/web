@@ -1,0 +1,6 @@
+src/ip_config.js merge=ours
+src\ip_config.js merge=ours
+*/ip_config.js merge=ours
+*\ip_config.js merge=ours
+ip_config.js merge=ours
+*ip_config* merge=ours

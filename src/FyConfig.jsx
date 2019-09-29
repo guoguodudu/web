@@ -1,0 +1,1 @@
+export const fyGroup = ['FYXX','EF01','FSZR'];

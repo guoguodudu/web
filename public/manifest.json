@@ -1,0 +1,9 @@
+{
+  "name": "ReactAdmin",
+  "short_name": "ReactAdmin",
+  "theme_color": "#313653",
+  "background_color": "#313653",
+  "display": "fullscreen",
+  "start_url": ".",
+  "splash_pages": null
+}
